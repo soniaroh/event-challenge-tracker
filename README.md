@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Event Challenge Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Event Challenge Tracker** is a fun and interactive React app that allows users to create, track, and manage personal challenges and events. Whether it's a fitness challenge, a learning goal, or a self-improvement task, this app helps users stay motivated and monitor their progress.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication** (Optional for now): Log in to track your challenges, or use it as a guest.
+- **Create Events/Challenges:** Create custom events and challenges with a specific goal.
+- **Track Progress:** Monitor your progress with visual indicators (e.g., percentage, completion status).
+- **Leaderboards:** (If applicable) Compare progress with others in a public challenge.
+- **Reminder Notifications:** Get reminders to stay on track with your challenge.
+- **Responsive Design:** Fully responsive design for a seamless experience across all devices.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend:** React, TypeScript, Styled Components (CSS)
+- **State Management:** React Context API or Redux
+- **Routing:** React Router
+- **Local Storage:** For saving user progress and challenges (no database)
 
-- Configure the top-level `parserOptions` property like this:
+## Setup & Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To set up the project locally:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Node.js (>= 14.x)
+- Git
+- npm or yarn
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/soniaroh/event-challenge-tracker.git
+   cd event-challenge-tracker
