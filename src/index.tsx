@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppRoutes from './Routes';
 import App from './App';
 
 const rootElement = document.getElementById('root');

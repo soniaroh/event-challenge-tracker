@@ -25,10 +25,10 @@ const Tab = styled(NavLink)`
 
 const Tabs: React.FC = () => {
   return (
-    <div>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-    </div>
+    <TabContainer>
+      <Tab to="/">Home</Tab>
+      <Tab to="/about">About</Tab>
+    </TabContainer>
   )
 };
 
